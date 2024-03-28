@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="logo2.png" type="image/x-icon" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="guess.css" />
+  </head>
+  <body >
+    <div class="container">
+      <div class="window1">
+        <h1>Select Range</h1>
+        <button>25</button>
+        <button>50</button>
+        <button>75</button>
+        <button>100</button>
+      </div>
+      <div class="window2">
+        <h2>Guess The Number</h2>
+        <div class="dot" onclick="fast()"></div>
+        <div class="pad"></div>
+        <span>
+          Lives :
+          <header id="lives"></header>
+        </span>
+      </div>
+      <div class="window3 pop">
+        <header class="winner pop">Winner !</header>
+        <header class="lose pop">You Loose !</header>
+        <button onclick="GoToMenu()">Main Menu</button>
+        <button onclick="Restart()">Restart</button>
+      </div>
+    </div>
+    <script src="makePad.js"></script>
+    <script src="guess.js"></script>
+  </body>
+</html>
